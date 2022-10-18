@@ -1,2 +1,1 @@
-# JavaScript-Para-back-end-
-Aprendendo javascript para backend
+# JavaScript-Para-back-end

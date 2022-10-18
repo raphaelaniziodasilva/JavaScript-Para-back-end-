@@ -1,0 +1,14 @@
+Merge Sort siginfica misturar, juntar, fundi ... etc e dividir para conquiatar
+
+Temos uma lista de livros que esta desordenada e contém mais de dez mil livros dentro dela
+
+Vamos fazer a ordenação dessa lista a partir do menor valor ate o maior valor
+
+Vamos usar metodos do proprio javascript para nos ajudar a resolver essa ordenação
+
+A ideia e dividir esse array em duas partes que ainda estão desordenadas 
+
+Com o array dividido em duas partes vamos pegar a primeira parte e dividir novamente em 2 partes e depois a segunda parte e dividir em duas partes
+
+Com as partes dividias em 2 vamos fazer a comparação do valor mais barato 
+

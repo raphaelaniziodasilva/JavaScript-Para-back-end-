@@ -1,0 +1,2 @@
+Criar duas listas de livros e depois ordernar as listas a partir do menor valor
+Para isso precisamos comparar o valor da lista 1 com a lista 2 pegando o menor valor entre as listas e jogando esse valor em array de formar ordenada 
