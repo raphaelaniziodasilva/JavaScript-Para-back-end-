@@ -9,6 +9,11 @@ function busca(array, de, ate, valorBuscado) {
     // para acessar o objeto a propriedade preço para poder fazer a comparação 
     const atual = array[meio]
 
+    // para a função parar de se executada e não entrar em looping infinito
+    if(de > ate) {
+        return -1
+    }
+
     // se o elemento do meio for justamente o valorBuscado que estamos procurando
     if(valorBuscado === atual.preco) {
         return meio
@@ -28,4 +33,4 @@ function busca(array, de, ate, valorBuscado) {
     // vai nos retornar a posição aonde esta o elemento
 }
 
-console.log(busca(listaLivros, 0, listaLivros.length -1, 22))
+console.log(busca(listaLivros, 0, listaLivros.length -1, 30))
