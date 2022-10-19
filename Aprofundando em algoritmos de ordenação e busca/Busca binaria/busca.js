@@ -28,4 +28,4 @@ function busca(array, de, ate, valorBuscado) {
     // vai nos retornar a posição aonde esta o elemento
 }
 
-console.log(busca(listaLivros, 0, listaLivros.length -1, 28))
+console.log(busca(listaLivros, 0, listaLivros.length -1, 22))
