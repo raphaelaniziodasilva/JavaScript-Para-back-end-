@@ -1,4 +1,5 @@
 import User from "./User.js";
+import chalk from "chalk";
 
 export default class Docente extends User {
     constructor(nome, email, nascimento, role = "docente", ativo = true) {
@@ -9,3 +10,7 @@ export default class Docente extends User {
         return `Estudante: ${estudante} - passou no Curso de ${curso}`
     }
 }
+
+//const novoDocente = new Docente("Vegeta", "SSjblue@gmail.com", "20-10-1990")
+//console.log(novoDocente)
+//console.log(chalk.bgYellowBright(novoDocente.aprovarEstudante("Trunks","SSJBlue")))

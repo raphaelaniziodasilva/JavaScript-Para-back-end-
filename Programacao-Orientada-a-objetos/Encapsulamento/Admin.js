@@ -2,6 +2,10 @@
 A herança de classes ela funciona para trazer as propriedades e os metodos 
 */
 
+// importando a bliblioteca chalk
+import chalk from "chalk";
+import { Console } from "console";
+
 // importando a entidade User
 import User from "./User.js";
 
@@ -14,4 +18,8 @@ export default class Admin extends User {
         return `Curso de ${nomeCruso} contém ${vagas} Vagas`
     }
 }
+
+//const novoAdmin = new Admin("Majinbu", "maj@gmail.com", "10-08-2019")
+//console.log(novoAdmin)
+//console.log(chalk.green(novoAdmin.criarCruso("Node.js with JavaScript", 23)))
 
