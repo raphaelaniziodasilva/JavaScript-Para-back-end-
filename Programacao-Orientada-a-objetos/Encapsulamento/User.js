@@ -16,6 +16,7 @@ export default class User {
         this.#ativo = ativo;
     }
 
+    // GET
     // O metodo get define quais atributos da classe podem ser exportada ou esposta para fora da classe privada
     // As funções get ou metodo get primeiro elas não recebem nehum argumento elas so retornam o que esta dentro dela 
     get nome() {
@@ -27,6 +28,22 @@ export default class User {
     get nascimento() {
         return this.#nascimento
     }
+
+    /*SET
+     O metodo set e usado para definir propriedades para alterar propriedades que são privadas ou que estão pivadas de uma forma segura
+     O metodo set ele recebe um unico parametro e depois vamos defini como vai ser feita a substituição da propriede privada
+    
+     O set eles também são super importantes para proteger uma propriedade alteração critica 
+    */
+    set nome(novoNome) {
+        // validando se quando a alteração do nome for feita se estiver vazio vai receber um erro se não estiver vazio vai receber o nome
+        // toda a logica que envolve a modificação de uma propriedade ela pode ser feita aqui dentro do set
+        if(novoNome === "") {
+            throw new Error("Formato invalido não foi atribuido nenhum valor")
+        }
+        this.#nome = novoNome
+    }
+
 
     // temos que passar a # nos metodos "funções" também depois do this.
     exibirInfos() {

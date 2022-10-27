@@ -26,7 +26,17 @@ const novoAdmin = new Admin("Picolo", "pc@gmail.com", "12-10-1990")
 // Usando o metodo get para pegar as informações que estão privadas
 const newUser = new User("Brolly", "brolly@gmail.com", "15-07-2019")
 
-// quando fizermos as chamadas dos atributo que esta no metodo get não precisamos chamar o metodo como se fosse uma função podemos chamar como uma propriedade
+// quando fizermos as chamadas dos atributo que esta no metodo get não precisamos chamar o metodo como se fosse uma função usando os () podemos chamar como uma propriedade
 console.log(newUser.nome)
 console.log(newUser.email)
 console.log(newUser.nascimento)
+
+// Usando o metodo set para alterar propriedades que estão privadas ou seja aqui vamos trocar o nome
+const people = new User("Escanor", "esc@gmail.com", "07-07-2018")
+console.log(people.nome)
+// Alterando o nome atraves do metodo set. Para atribuir um novo nome, para passar para o set uma nova informação 
+people.nome = "Sun Shine"
+console.log(people.nome)
+// se o nome não for passado vai ter aparecer a mensagem de erro
+people.nome = ""
+console.log(people.nome)
